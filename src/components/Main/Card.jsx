@@ -1,7 +1,7 @@
 const Card = ({ data }) => {
   console.log(data[0]);
   return (
-    <div>
+    <div className="card-container">
       {data.map((item, index) => {
         const { id, title, image, desc } = item;
         return (

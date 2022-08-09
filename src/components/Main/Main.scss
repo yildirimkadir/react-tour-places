@@ -1,1 +1,52 @@
 @import "../../scss/variables";
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards {
+    background-color: $cardNavBgColor;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0.8);
+    position: relative;
+    overflow: hidden;
+    &:hover .card-desc {
+        transform: translateY(0);
+            
+        }
+}
+.title {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    &:hover {
+        filter: grayscale(100%);
+    }
+}
+.card-desc {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.6);
+    font-size: 1rem;
+    padding: 1rem;
+    transform: translateY(100%);
+    z-index: 1;
+    transition: transform 0.6s ease-in-out;
+}
+
+    
+
+
+
+
+

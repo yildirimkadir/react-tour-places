@@ -5,7 +5,7 @@ import Card from "./Card";
 const Main = () => {
   console.log(data);
   return (
-    <div className="card-container">
+    <div>
       <Card data={data} />
     </div>
   );
